@@ -1,0 +1,153 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #6decaf;
+  color: white;
+}
+
+/*html {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+}*/
+
+.is-grey {
+  color: #333;
+}
+
+.title {
+  font-size: 6.5vw;
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+
+.subtitle {
+  font-size: 2vw;
+  margin: 0;
+  font-weight: 700;
+}
+
+.container, .nav-container {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1500px;
+}
+
+.intro {
+  margin-top: 2em;
+}
+
+#communication {
+  font-style: italic;
+  /*color: #333;*/
+}
+
+.nav-grid {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+
+.nav-grid .first-short-item {
+  color: black;
+}
+
+/*.nav-grid .second-short-item {
+  color: black;
+}*/
+
+.long-item {
+  grid-column: span 2;
+}
+
+.short-item {
+  grid-column: span 1;
+}
+
+/*.nav-grid .first-long-item {
+  grid-column: 2 / 4;
+}
+
+.nav-grid .second-long-item {
+  grid-column: 1 / 3;
+}*/
+
+.nav-grid div {
+  /*border: 1px solid black;*/
+  height: 28vw;
+  max-height: 500px;
+  position: relative;
+  color: white;
+  background-size: cover;
+  /*background-color: black;*/
+  background-blend-mode: difference;
+  filter: grayscale(1);
+}
+
+/*.about {
+  background: url("./images/about.jpeg") no-repeat center center;
+  background-size: cover;
+  background-color: black;
+  background-blend-mode: difference;
+}*/
+
+.image {
+  height: 100%;
+  width: 100%;
+}
+
+.nav-title {
+  margin: 0;
+  position: absolute;
+  padding-left: 20px;
+  font-size: 2.5rem;
+  margin-bottom: 1vw;
+  top: 20px;
+  left: 10px;
+}
+
+footer {
+  height: 80px;
+  /*background-color: #f9f9f9;*/
+  width: 100%;
+}
+
+.footer-links {
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 1.6rem;
+}
+
+.footer-links p {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .subtitle {
+    font-size: 5vw;
+    margin: 0;
+    font-weight: 700;
+  }
+  .nav-container {
+    width: 100%;
+    max-width: 500px;
+  }
+  .nav-grid {
+    display: block;
+  }
+  .nav-grid div {
+    display: block;
+    width: 100%;
+    height: 50vw;
+    margin-bottom: 3rem;
+    filter: none;
+  }
+}
