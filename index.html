@@ -7,7 +7,7 @@
     <title>Sean Bray</title>
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
   </head>
 
   <body>
@@ -16,32 +16,57 @@
         <h1 class="subtitle is-grey">Sean Bray.</h1>
         <h2 class="subtitle">Fullstack Web Developer.</h2>
       </div>
-      <h3 class="title">Improving <br /><span id="communication" class="is-grey">communication</span><br /> with the web.</h3>
+      <div class="message">
+        <h3 class="title">Encouraging <br /><span id="communication" class="is-grey">exploration</span><br /> with the web.</h3>
+        <h1 class="navigation is-grey">Featured.</h1>
+      </div>
     </section>
+
     <section class="nav-container">
+
+      <!-- <div class="container"> -->
       <div class="nav-grid">
-        <div class="first-short-item about">
-          <h1 class="nav-title">About</h1>
-          <img src="./images/about.jpeg" alt="stars in the sky" class="image">
-        </div>
-        <div class="long-item">
-          <h1 class="nav-title">DiscoverIt</h1>
-          <img src="./images/blueNight.jpeg" alt="stars in the sky" class="image">
-        </div>
-        <div class="long-item">
-          <h1 class="nav-title">DayTripper</h1>
-          <img src="./images/daytrip-pic.jpeg" alt="travel supplies" class="image">
-        </div>
-        <div class="second-short-item">
-          <h1 class="nav-title">GitFit</h1>
-          <img src="./images/gifitTwo.jpeg" alt="person running" class="image">
-        </div>
+        <a href="#" class="short-item">
+          <div class="first-short-item about">
+            <h1 class="nav-title">About</h1>
+            <img src="./images/about.jpeg" alt="stars in the sky" class="image">
+          </div>
+        </a>
+        <a href="#" class="short-item">
+          <div class="second-short-item">
+            <h1 class="nav-title">GitFit</h1>
+            <img src="./images/gifitTwo.jpeg" alt="person running" class="image">
+          </div>
+        </a>
+        <a href="./html/discover.html" class="long-item">
+          <div class="long-item">
+            <h1 class="nav-title">DiscoverIt</h1>
+            <img src="./images/blueNight.jpeg" alt="stars in the sky" class="image">
+          </div>
+        </a>
+        <a href="#" class="long-item">
+          <div class="long-item">
+            <h1 class="nav-title">DayTripper</h1>
+            <img src="./images/daytrip-pic.jpeg" alt="travel supplies" class="image">
+          </div>
+        </a>
+
+        <!-- </div> -->
       </div>
     </section>
     <footer>
       <div class="container">
-        <div class="footer-links">
-          <p class="is-grey">Github.</p>
+        <div class="footer-links subtitle">
+          <!-- <p class="contact">@</p> -->
+          <a href="https://github.com/brootroot">
+            <p class="is-grey">Github.</p>
+          </a>
+          <!-- <a href="#">
+            <p>Twitter.</p>
+          </a> -->
+          <a href="mailto:seanlbray@gmail.com">
+            <p>Email.</p>
+          </a>
         </div>
       </div>
     </footer>
