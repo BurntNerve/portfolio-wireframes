@@ -2,15 +2,9 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #0e0b16;
-  color: #f8f4e3;
+  background-color: black;
+  color: #f9f9f9;
 }
-
-/*html {
-  height: 100vh;
-  position: absolute;
-  top: 0;
-}*/
 
 a {
   text-decoration: none;
@@ -19,11 +13,13 @@ a {
 
 .is-grey {
   color: #8cfbde;
-  /*color: #C2E812;*/
+}
+
+.is-red {
+  color: #FF6061;
 }
 
 .title {
-  /*font-size: 7vw;*/
   font-size: calc(100px + 2vw);
   font-weight: 600;
   line-height: 1.1;
@@ -32,7 +28,6 @@ a {
 }
 
 .subtitle {
-  /*font-size: 2vw;*/
   font-size: calc(18px + .5vw);
   margin: 0;
   font-weight: 700;
@@ -46,18 +41,7 @@ a {
   position: relative;
 }
 
-.nav-container {
-  /*display: flex;
-  width: 90%;
-  flex-basis: auto;
-  flex-direction: row;
-  flex-grow: 1;
-  flex-wrap: wrap;*/
-  /*width: 100%;
-  display: block;
-  margin: 0 auto;
-  position: relative;*/
-}
+.nav-container {}
 
 .intro {
   margin-top: 3vw !important;
@@ -70,7 +54,6 @@ a {
 
 #communication {
   font-style: italic;
-  /*color: #333;*/
 }
 
 .navigation {
@@ -79,25 +62,14 @@ a {
 }
 
 .nav-grid {
-  /*width: 80%;*/
-  /*margin-top: 5rem;*/
   width: 75%;
-  /*margin-bottom: 5rem;*/
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: auto auto;
-  grid-column-gap: 18px;
-  grid-row-gap: 18px;
+  grid-column-gap: 1vw;
+  grid-row-gap: 1vw;
 }
-
-.nav-grid .first-short-item {
-  color: #0e0b16;
-}
-
-/*.nav-grid .second-short-item {
-  color: black;
-}*/
 
 .long-item {
   grid-column: span 2;
@@ -107,22 +79,11 @@ a {
   grid-column: span 1;
 }
 
-/*.nav-grid .first-long-item {
-  grid-column: 2 / 4;
-}
-
-.nav-grid .second-long-item {
-  grid-column: 1 / 3;
-}*/
-
 .nav-grid div {
-  /*border: 1px solid black;*/
   height: auto;
-  /*max-height: 600px;*/
   position: relative;
   color: #f8f4e3;
   background-size: cover;
-  /*background-color: black;*/
   background-blend-mode: difference;
   filter: grayscale(1);
   transition: 0.7s ease;
@@ -137,25 +98,15 @@ a {
   opacity: 1;
 }
 
-/*.about {
-  background: url("./images/about.jpeg") no-repeat center center;
-  background-size: cover;
-  background-color: black;
-  background-blend-mode: difference;
-}*/
-
 .image {
   height: 100%;
   width: 100%;
-  border-radius: 3px;
 }
 
 .responsive-image {
   width: 100%;
   height: auto;
   border-radius: 3px;
-  /*margin-top: 5rem;
-  margin-bottom: 5rem;*/
   z-index: 0;
 }
 
@@ -186,15 +137,7 @@ a {
   transition: 0.7s ease;
 }
 
-/*.info-container {
-  display: block;
-  margin: 0 auto;
-  width: 80%;
-  max-width: 1500px;
-}*/
-
 .title-container {
-  /*width: 40%;*/
   margin: 0 auto;
   width: 75%;
   padding-bottom: 10px;
@@ -204,7 +147,6 @@ a {
 .content-container {
   margin: 0 auto;
   width: 75%;
-  /*max-width: 1050px;*/
 }
 
 .see {
@@ -215,7 +157,6 @@ a {
   margin-top: 2rem !important;
   margin-bottom: 2rem;
   text-align: left;
-  /*font-size: 2vw;*/
   font-size: calc(30px + .5vw);
   font-weight: 100;
 }
@@ -231,7 +172,6 @@ a {
 
 footer {
   height: 80px;
-  /*background-color: #f9f9f9;*/
   width: 100%;
   display: block;
   margin: 0 auto;
@@ -245,8 +185,6 @@ footer {
   width: 75%;
   padding-top: 10px;
   font-weight: 700;
-  /*padding-left: 10px;*/
-  /*font-size: 2vw;*/
 }
 
 .footer-links p {
@@ -265,15 +203,17 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
   .subtitle {
-    /*font-size: 5vw;*/
-    /*font-size: calc(5px + 2vw);*/
     font-size: calc(15px + .5vw);
     margin: 0;
     font-weight: 700;
   }
   .title {
     font-size: 14vw;
+    margin-bottom: 5vw;
   }
   .display {
     min-width: 0px;
@@ -286,21 +226,10 @@ footer {
   .content {
     font-size: 4.5vw;
   }
-  /*.nav-container {
-    width: 90%;
-    max-width: 600px;
-  }
-  .container {
-    width: 90%;
-    max-width: 600px;
-  }
-  .navigation {
-    margin-top: 2rem;
-    font-size: 22px;
-  }
   .nav-grid {
-    display: block;
-  }*/
+    grid-column-gap: 2vw;
+    grid-row-gap: 2vw;
+  }
   .nav-grid div {
     filter: none;
   }
@@ -311,16 +240,4 @@ footer {
     left: 10px;
     padding-left: 0;
   }
-  /*.footer-links {
-    font-size: 18px;
-  }
-  .contact {
-    font-size: 22px;
-  }
-  .content {
-    margin-top: 2rem !important;
-    margin-bottom: 2rem;
-    text-align: left;
-    font-weight: 200;
-  }*/
 }
