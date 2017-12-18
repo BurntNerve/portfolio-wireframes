@@ -11,7 +11,7 @@ a {
   color: inherit;
 }
 
-.is-grey {
+.is-blue {
   color: #8cfbde;
 }
 
@@ -41,8 +41,6 @@ a {
   position: relative;
 }
 
-.nav-container {}
-
 .intro {
   margin-top: 3vw !important;
 }
@@ -56,7 +54,7 @@ a {
   font-style: italic;
 }
 
-.navigation {
+.featuring {
   margin-top: 5vw;
   font-size: 18px;
 }
@@ -99,7 +97,7 @@ a {
 }
 
 .image {
-  height: 100%;
+  height: auto;
   width: 100%;
 }
 
@@ -151,6 +149,7 @@ a {
 
 .see {
   font-size: 1.3rem;
+  font-weight: 600;
 }
 
 .content {
@@ -158,7 +157,7 @@ a {
   margin-bottom: 2rem;
   text-align: left;
   font-size: calc(30px + .5vw);
-  font-weight: 100;
+  font-weight: 600;
 }
 
 .display {
@@ -203,7 +202,7 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  .navigation {
+  .featuring {
     display: none;
   }
   .subtitle {
@@ -226,9 +225,15 @@ footer {
   .content {
     font-size: 4.5vw;
   }
+  /*.nav-container {
+    width: 100%;
+    margin: 0;
+  }*/
   .nav-grid {
-    grid-column-gap: 2vw;
-    grid-row-gap: 2vw;
+    /*grid-column-gap: 2vw;
+    grid-row-gap: 2vw;*/
+    /*grid-column-gap: 0;
+    grid-row-gap: 0;*/
   }
   .nav-grid div {
     filter: none;
