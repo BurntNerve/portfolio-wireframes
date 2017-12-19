@@ -114,6 +114,12 @@ a {
   margin: 5vw auto;
 }
 
+.about-image-container {
+  position: relative;
+  width: 75%;
+  margin: 5vw auto;
+}
+
 .image-title {
   margin: 0;
   position: absolute;
